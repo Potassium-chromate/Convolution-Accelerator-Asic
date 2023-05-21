@@ -24,7 +24,7 @@ This Verilog module takes an input image and computes a convolution using a spec
 IDLE State: The module stays in IDLE state until ready is asserted. Once ready is high, it transitions to the READ_IMAGE state.
 2. READ_IMAGE State: In this state, the module reads image data from the memory location pointed by iaddr and performs a convolution operation using a fixed kernel.
 3. WRITE_MEM0 State: The convolution results are written to memory. The module cycles through the entire image and then transitions to the READ_MEM0 state.
-4. READ_MEM0 State: Unless `x` and `y` equal to 0. The module reads back the convolution results from memory. The maximum value within a 2x2 window is found, then the module transitions to the WRITE_MEM1 state.
+4. READ_MEM0 State:  Unless `x` and `y` equal to 0, the state will going into this state. The module reads back the convolution results from memory. The maximum value within a 2x2 window is found, then the module transitions to the WRITE_MEM1 state.
 5. WRITE_MEM1 State: The maximum value found in the previous state is written to another memory location. The module cycles through the entire image again and then transitions back to the IDLE state.
 6. FINISH State: This state represents the completion of processing and the module transitions back to the IDLE state.  
   
