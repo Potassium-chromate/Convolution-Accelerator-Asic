@@ -29,9 +29,9 @@ The main objective of this project is to accelerate convolution operations on th
 ![image](https://github.com/user-attachments/assets/ab98d6a7-5c3d-4d9e-9d55-5f138a93985a)
 
 ## Project Structure
-- [CONV.v](#con.v)
+- CONV.v
 - conv_aux.v
-- [hw10_2.ipynb](#hw10_2.ipynb)
+- hw10_2.ipynb
 ## CONV.v
 ### Circuit Description
 ![image](https://github.com/user-attachments/assets/e61830bc-ca5e-4db3-83da-8c90bc513fd9)
