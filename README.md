@@ -1,4 +1,25 @@
 # ATCONV Module
+This project demonstrates a custom Convolution IP implementation on the PYNQ-Z2 board. The IP core processes data transferred between the custom Convolution IP and memory using the PYNQ-Z2 CPU.
+
+## Project Overview
+The main objective of this project is to accelerate convolution operations on the PYNQ-Z2 board using custom IP for efficient data processing and transfer. The CPU on the PYNQ board controls data transfer between memory and the Convolution IP.
+
+## Features
+- **Custom Convolution IP:** Implements a hardware-based convolution to enhance processing speed.
+- **Data Transfer Management:** Utilizes PYNQ-Z2’s CPU to handle data transfers, bridging memory and IP communication.
+- **Python & Jupyter Notebook Integration:** Controls and monitors the IP from the PYNQ-Z2 through Python scripts and Jupyter notebooks.
+
+## Requirements
+- PYNQ-Z2 board
+- Vivado (for hardware design)
+- PYNQ environment installed on the board
+- Python (used for interacting with the IP via Jupyter notebooks)
+
+## Hardware Setup
+- **Design the Convolution IP:** The IP is created and validated in Vivado, focusing on optimizing it for the PYNQ-Z2’s hardware.
+- **Data Transfer Configuration:** Set up the DMA to facilitate data flow between the IP and memory.
+- **Project Export:** Once verified, export the hardware project and bitstream file to the PYNQ-Z2 environment.
+
 ## Overview
 The ATCONV (Approximate Transformation Convolution) module is a digital design intended for an FPGA or ASIC implementation. The ATCONV module is a convolutional computation engine for 2D input data typically used in image processing and neural network calculations.
 
