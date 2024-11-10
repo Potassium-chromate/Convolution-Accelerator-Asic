@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Jun 13 16:40:15 2024
+# Process ID: 17632
+# Current directory: C:/Users/88696/Desktop/DIC/DlIC/HW10-2/Main
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15780 C:\Users\88696\Desktop\DIC\DlIC\HW10-2\Main\Main.xpr
+# Log file: C:/Users/88696/Desktop/DIC/DlIC/HW10-2/Main/vivado.log
+# Journal file: C:/Users/88696/Desktop/DIC/DlIC/HW10-2/Main\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/88696/Desktop/DIC/DlIC/HW10-2/Main/Main.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/88696/Desktop/DIC/DlIC/HW10-2/Main/Main.srcs/sources_1/bd/design_1/design_1.bd}
+set_property range 4K [get_bd_addr_segs {axi_cdma_0/Data/SEG_axi_bram_ctrl_0_Mem0}]
+set_property range 128K [get_bd_addr_segs {axi_cdma_0/Data/SEG_axi_bram_ctrl_0_Mem0}]
+save_bd_design

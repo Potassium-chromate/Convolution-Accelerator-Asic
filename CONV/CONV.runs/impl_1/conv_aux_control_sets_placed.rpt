@@ -1,0 +1,86 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Jun  4 23:58:43 2024
+| Host         : DESKTOP-BGBHF46 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file conv_aux_control_sets_placed.rpt
+| Design       : conv_aux
+| Device       : xc7z020
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    15 |
+| Unused register locations in slices containing registers |    53 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            1 |
+|      4 |            2 |
+|      7 |            1 |
+|      9 |            1 |
+|     10 |            1 |
+|     12 |            1 |
+|     13 |            1 |
+|    16+ |            7 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              70 |           28 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               4 |            3 |
+| Yes          | No                    | No                     |              62 |           32 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              91 |           32 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------+------------------------------+------------------------------+------------------+----------------+
+|      Clock Signal      |         Enable Signal        |       Set/Reset Signal       | Slice Load Count | Bel Load Count |
++------------------------+------------------------------+------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG         | CONV/busy_i_1_n_0            |                              |                1 |              1 |
+|  clk_IBUF_BUFG         |                              | rst_IBUF                     |                3 |              4 |
+|  clk_IBUF_BUFG         | CONV/idx[3]_i_1_n_0          |                              |                1 |              4 |
+|  clk_IBUF_BUFG         | CONV/offset[10]_i_2_n_0      | CONV/offset[10]_i_1_n_0      |                2 |              7 |
+|  clk_IBUF_BUFG         | CONV/iaddr[10]_i_2_n_0       | CONV/iaddr[10]_i_1_n_0       |                8 |              9 |
+|  clk_IBUF_BUFG         |                              |                              |                9 |             10 |
+|  clk_IBUF_BUFG         | CONV/caddr_rd[11]_i_1_n_0    |                              |                7 |             12 |
+|  clk_IBUF_BUFG         | CONV/conv_result[35]_i_1_n_0 |                              |                6 |             13 |
+|  CONV/E[0]             |                              |                              |                8 |             20 |
+|  CONV/csel_reg[0]_0[0] |                              |                              |                5 |             20 |
+|  CONV/csel_reg[2]_0[0] |                              |                              |                6 |             20 |
+|  clk_IBUF_BUFG         | CONV/max_data[19]_i_2_n_0    | CONV/max_data[19]_i_1_n_0    |                5 |             20 |
+|  clk_IBUF_BUFG         | CONV/conv_result[35]_i_1_n_0 | CONV/conv_result[31]_i_1_n_0 |                8 |             23 |
+|  clk_IBUF_BUFG         | CONV/caddr_wr[11]_i_1_n_0    |                              |               17 |             32 |
+|  clk_IBUF_BUFG         | CONV/counter[31]_i_2_n_0     | CONV/counter[31]_i_1_n_0     |                9 |             32 |
++------------------------+------------------------------+------------------------------+------------------+----------------+
+
+
