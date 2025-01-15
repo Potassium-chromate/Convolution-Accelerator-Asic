@@ -91,4 +91,5 @@ Run the script `Estimate.py` to compare the performance of the CPU and the ASIC 
 ### Execution Results
 - Execution time on **CPU**: 0.1490 seconds
 - Execution time on **ASIC accelerator**: 0.0980 seconds
+
 The ASIC achieves a **1.52x speedup** compared to the CPU.
